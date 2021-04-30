@@ -6,7 +6,8 @@
     </div>
     <div class="col-8">
       <!--Singolo libro-->
-      <app-libro [mioLibro]="elencoLibri[corrente]" (LibroRemove)="cancellaLibro($event)"></app-libro>
+      <app-libro [mioLibro]="elencoLibri[corrente]" (LibroRemove)="cancellaLibro($event)" *ngIf="elencoLibri.length > 0; else elseBlock"></app-libro>
+      <ng-template #elseBlock> <img src="https://www.ticinonotizie.it/wp-content/uploads/2017/10/tutto-esaurito.jpg" class="fine" alt=""></ng-template>
     </div>
   </div>
 </div>
