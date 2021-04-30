@@ -25,6 +25,5 @@ export class LibroComponent implements OnInit {
   eliminaLibro(){
     // alert(this.mioLibro.autore);
     this.LibroRemove.emit(this.mioLibro);
-    this.
   }
 }
