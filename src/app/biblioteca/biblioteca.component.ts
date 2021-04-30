@@ -23,7 +23,7 @@ export class BibliotecaComponent implements OnInit {
 
   cancellaLibro(libroDaCAncellare: Libro){
     alert("stai cancellando il libro" + libroDaCAncellare.titolo);
-
+    alert(this.elencoLibri[this.corrente].titolo);
   }
 
 }

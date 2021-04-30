@@ -8,7 +8,7 @@ import { Libro } from "../common/libro.model";
 })
 export class LibroComponent implements OnInit {
   @Input() mioLibro: Libro;
-  @Output() LibroRemove = new EventEmitter();
+  @Output() LibroRemove = new EventEmitter<Libro>();
 
   percorsoBase: string = "https://raw.githubusercontent.com/MatioliSimone/ImgPerBibliotecaAngular/main/img30libri/";
   percorsoFinale: string;
