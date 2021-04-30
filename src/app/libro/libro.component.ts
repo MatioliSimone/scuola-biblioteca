@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from "@angular/core";
+import { Component, EventEmitter, Input, OnInit, Output } from "@angular/core";
 import { Libro } from "../common/libro.model";
 
 @Component({
@@ -8,6 +8,7 @@ import { Libro } from "../common/libro.model";
 })
 export class LibroComponent implements OnInit {
   @Input() mioLibro: Libro;
+  @Output() LibroRemove = new EventEmitter();
 
   percorsoBase: string = "https://raw.githubusercontent.com/MatioliSimone/ImgPerBibliotecaAngular/main/img30libri/";
   percorsoFinale: string;
@@ -22,6 +23,6 @@ export class LibroComponent implements OnInit {
   }
 
   eliminaLibro(){
-    
+    this.
   }
 }
