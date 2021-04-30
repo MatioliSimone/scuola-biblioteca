@@ -22,6 +22,6 @@ export class LibroComponent implements OnInit {
   }
 
   eliminaLibro(){
-    console.log("DSADSAASDASD");
+    
   }
 }
