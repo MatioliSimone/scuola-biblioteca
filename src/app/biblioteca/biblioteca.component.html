@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <!--Lista dei Titoli-->
+      <button *ngFor="let libro of elencoLibri;index as i" type="button" class="list-group-item list-group-item-action" [ngClass]="{'active':corrente==i}" (click)="corrente=i">{{libro.titolo}}</button>
+    </div>
+    <div class="col-8">
+      <!--Singolo libro-->
+      <app-libro [mioLibro]="elencoLibri[corrente]"></app-libro>
+    </div>
+  </div>
+</div>

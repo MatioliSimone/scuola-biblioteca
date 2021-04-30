@@ -1,0 +1,19 @@
+<div class="card mb-3" style="max-width: 940px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img [src]="creaPerocrso()" class="figure-img img-fluid rounded" />
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{mioLibro.titolo}} di {{mioLibro.autore}}</h5>
+        <p class="card-text">{{mioLibro.id}}. {{mioLibro.collana}}</p>
+        <hr>
+        <p class="card-text">anno di pubblicazione {{mioLibro.anno_pubblicazione}}</p>
+        <hr>
+        <p class="card-text">casa editrice {{mioLibro.casa_editrice}}</p>
+        <hr>
+        <button (click)="eliminaLibro()" class="btn btn-outline-dark">Elimina questo libro</button>
+      </div>
+    </div>
+  </div>
+</div>
