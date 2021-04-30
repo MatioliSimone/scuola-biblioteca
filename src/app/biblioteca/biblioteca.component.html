@@ -6,7 +6,7 @@
     </div>
     <div class="col-8">
       <!--Singolo libro-->
-      <app-libro [mioLibro]="elencoLibri[corrente]"></app-libro>
+      <app-libro [mioLibro]="elencoLibri[corrente]" (LibroRemove)="cancellaLibro($event)"></app-libro>
     </div>
   </div>
 </div>

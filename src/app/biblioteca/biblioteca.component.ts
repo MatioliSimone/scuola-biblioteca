@@ -21,4 +21,9 @@ export class BibliotecaComponent implements OnInit {
     this.elencoLibri = this.elencoServ.elenco;
   }
 
+  cancellaLibro(libroDaCAncellare: Libro){
+    alert("stai cancellando il libro" + libroDaCAncellare.titolo);
+
+  }
+
 }

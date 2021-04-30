@@ -19,10 +19,11 @@ export class LibroComponent implements OnInit {
     
   }
   creaPerocrso(){
-    return this.percorsoFinale = this.percorsoBase + this.mioLibro.id + "-" + this.mioLibro.autore + ".jpg";
+    return this.percorsoFinale = this.percorsoBase + this.mioLibro.id + "-" + this.mioLibro.autore + ".jpg";  
   }
 
   eliminaLibro(){
-    this.
+    // alert(this.mioLibro.autore);
+    this.LibroRemove.emit(this.mioLibro);
   }
 }
