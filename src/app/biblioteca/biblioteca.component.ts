@@ -22,7 +22,12 @@ export class BibliotecaComponent implements OnInit {
   }
 
   cancellaLibro(libroDaCAncellare: Libro){
-    this.elencoLibri = this.elencoLibri.slice(0, this.corrente).concat(this.elencoLibri.slice(this.corrente+  1));
+    for(let i = 0; i < this.elencoLibri.length; i++){
+      if(libroDaCAncellare.id == this.elencoLibri[i].id){
+        this.elencoLibri = this.elencoLibri.slice(0, this.corrente).concat(this.elencoLibri.slice(this.corrente+  1));
+      }
+    }
+    
   }
 
 }
